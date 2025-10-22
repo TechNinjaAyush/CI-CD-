@@ -22,6 +22,10 @@ app.use((req, res) => {
     res.status(404).send('Page not found');
 });
 
+
+app.get("/hello" , (req , res)=>{
+    res.json({status:"ok..."})
+})
 // Start server
 app.listen(PORT, () => {
     console.log(`Dummy Express server running on http://localhost:${PORT}`);
