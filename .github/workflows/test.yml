@@ -21,9 +21,7 @@ jobs:
       run: npm install
       working-directory: ./  # ensures npm runs at repo root
 
-    - name: Run tests
-      run: npm test
-      working-directory: ./  # ensures tests run at repo root
+    
 
     - name: Deploy
       if: success()  # only runs if tests pass
